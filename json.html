@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>modifying an object</h1>
+    <p id="result"></p>
+    <script>
+        const name = {
+            first: "chandu",
+            last: "urs",
+            age: 25,
+        };
+        name.last="rao"
+        name["first"] = "ramesh";
+        document.getElementById("result").textContent = name.first + name["last"];
+    </script>
+</body>
+
+</html>

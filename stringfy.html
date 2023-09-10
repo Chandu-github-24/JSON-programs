@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>create a json string from JS object </h1>
+    
+    <p id="demo"></p>
+    <h1>create a json string from a JS array</h1>
+    <h4 id="output"></h4>
+    <script>
+        const obj = { name: "raj", age: 20, occupation: "teacher" }
+        const myJSON = JSON.stringify(obj);
+        document.getElementById("demo").innerHTML = myJSON;
+
+        const Arraystring =['roopa','revu','ramya','radhika'];
+        const myarr = JSON.stringify(Arraystring);
+        document.getElementById("output").innerHTML = myarr;
+
+
+    </script>
+</body>
+
+</html>

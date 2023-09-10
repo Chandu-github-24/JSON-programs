@@ -1,0 +1,46 @@
+JSON stands for JavaScript Object Notation
+JSON is a lightweight data-interchange format
+JSON is plain text written in JavaScript object notation
+JSON is used to send data between computers
+JSON is language independent
+
+
+JSON example
+
+{"employes";[
+{"firstname":"john","lastname":"cena"},
+{"firstname":"john","lastname":"doe"},
+{"firstname":"verma","lastname":"tilak"},
+
+]}
+
+XML example
+
+<employees>
+    <employe>
+        <firstname>john</firstname>
+        <lastname>cena</lastname>
+    </employe>
+
+    <employe>
+        <firstname>john</firstname>
+        <lastname>doe</lastname>
+    </employe>
+
+    <employe>
+        <firstname>verma</firstname>
+        <lastname>tilak</lastname>
+    </employe>
+</employees>
+
+JSON is Like XML Because
+Both JSON and XML are "self describing" (human readable)
+Both JSON and XML are hierarchical (values within values)
+Both JSON and XML can be parsed and used by lots of programming languages
+
+<!-- ======== -->
+JSON is Unlike XML Because
+JSON doesn't use end tag
+JSON is shorter
+JSON is quicker to read and write
+JSON can use arrays

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>store and retrieve data from local storage</h1>
+
+    <p id="demo"></p>
+    <p id="output"></p>
+    <script>
+
+        // storing data
+
+        const person = {
+            name: "raj",
+            age: 34,
+            occupation: "artist",
+            familyname: "urs"
+        }
+        const myDataPerson = JSON.stringify(person);
+        localStorage.setItem("testjson", myDataPerson);
+
+
+        // retrieving data 
+        const dataOfperson = localStorage.getItem("testjson")
+        const myperson = JSON.parse(dataOfperson);
+        document.getElementById("demo").innerHTML = myperson.age
+
+
+
+        // storing data
+        const fruits = {
+            name: "apple",
+            vitamin: "M",
+            const: 40,
+            weight: 30,
+        }
+        const fruitS = JSON.stringify(fruits)
+        localStorage.setItem("JSonFruits", fruitS)
+
+        // retrieving data
+
+        const retriveFruits = localStorage.getItem("JSonFruits");
+        let fruitingDATA = JSON.parse(retriveFruits)
+
+        document.getElementById("output").innerHTML = fruitingDATA.weight;
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>parsing an array</h2>
+    <h1>creating an object from JSON string </h1>
+    <p id="output"></p>
+    <p id="result"></p>
+    <p id="output1"></p>
+    <p id="result2"></p>
+    <script>
+        const name = '{"Fname":"john","Lname":"doe","age":20}'
+        const person = JSON.parse(name);
+        document.getElementById("output").innerHTML = person.age + " " + person.Lname;
+
+        const arr = '["apple","ornage","pineapple"]'
+        const fruits = JSON.parse(arr);
+        document.getElementById("result").innerHTML = fruits[0];
+
+        const people = '{"first":"raj","last":"verma","age":30,"dateofbirth":"2-15-2020"}'
+        const people1 = JSON.parse(people);
+        people1.dateofbirth = new Date(people1.dateofbirth)
+        document.getElementById("output1").innerHTML = people1.dateofbirth;
+
+        var aqua = '{"name":"chandu","age":23,"birth":"1-5-1990;"}'
+        var aqua1 = JSON.parse(aqua);
+        aqua1.birth = new Date(aqua1.birth);
+        document.getElementById("result2").innerHTML = aqua1.birth
+
+    </script>
+</body>
+
+</html>
